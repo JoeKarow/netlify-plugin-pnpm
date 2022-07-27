@@ -1,4 +1,4 @@
-name: 'netlify-plugin-{{name}}'
+name: "netlify-plugin-pnpm"
 inputs: []
 # Example inputs:
 #  - name: example
