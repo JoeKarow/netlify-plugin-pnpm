@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/79deda3b-d696-4878-b15d-d9f3a862bdfc/deploy-status)](https://app.netlify.com/sites/build-plugin-template/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cefb2fdb-84aa-4669-90fa-b0b01760471f/deploy-status)](https://app.netlify.com/sites/netlify-plugin-pnpm/deploys)
 
 Template repository to create new Netlify Build plugins.
 
