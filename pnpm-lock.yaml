@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@netlify/build': ^26.5.2
+  '@netlify/build': ^26.5.3
   ava: ^4.0.0
   chalk: ^5.0.0
   cpy: ^9.0.0
@@ -31,7 +31,7 @@ specifiers:
   yargs: ^17.0.0
 
 devDependencies:
-  '@netlify/build': 26.5.2
+  '@netlify/build': 26.5.3
   ava: 4.1.0
   chalk: 5.0.1
   cpy: 9.0.1
@@ -1789,8 +1789,8 @@ packages:
       glob-to-regexp: 0.3.0
     dev: true
 
-  /@netlify/build/26.5.2:
-    resolution: {integrity: sha512-b/movOQmBIw9ghNDdo4jviZGQRYMBzcGTN1BcoWgK649Whj1KfqEWpL+JBeqnCCNUQpfhfE9o284o6Ql37k8jQ==}
+  /@netlify/build/26.5.3:
+    resolution: {integrity: sha512-O16lFUI6/uooWIvgrO/fQphx4vAGTW9GDAQ3hvo5M64XFdu+9W/OU0fB0fAPAJp+wGM+/hZI5JSS6rCG+TWifg==}
     engines: {node: ^12.20.0 || ^14.14.0 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -1800,7 +1800,7 @@ packages:
       '@netlify/functions-utils': 4.1.9_supports-color@9.2.1
       '@netlify/git-utils': 4.1.1
       '@netlify/plugin-edge-handlers': 3.0.7_supports-color@9.2.1
-      '@netlify/plugins-list': 6.18.1
+      '@netlify/plugins-list': 6.35.0
       '@netlify/run-utils': 4.0.1
       '@netlify/zip-it-and-ship-it': 5.9.0_supports-color@9.2.1
       '@sindresorhus/slugify': 2.1.0
@@ -2126,6 +2126,11 @@ packages:
 
   /@netlify/plugins-list/6.18.1:
     resolution: {integrity: sha512-4aAF+lpoBYOIVMuTxge2YNjNKdMxnsV1equq0VtknBW6EGJ9yFiTPyL0NU0MXDWTWk7dNu8tS5+Uw7LN7+sgcg==}
+    engines: {node: ^12.20.0 || ^14.14.0 || >=16.0.0}
+    dev: true
+
+  /@netlify/plugins-list/6.35.0:
+    resolution: {integrity: sha512-cZLX9F74i2wcMNWOtQAJzhsWHjpPgcWpovJHEamMO5/ZiUSlOENonJ19S+Zwoa2uA+ACJSeThMjcXUgDZwQZeA==}
     engines: {node: ^12.20.0 || ^14.14.0 || >=16.0.0}
     dev: true
 
@@ -8030,7 +8035,7 @@ packages:
     hasBin: true
     requiresBuild: true
     dependencies:
-      '@netlify/build': 26.5.2
+      '@netlify/build': 26.5.3
       '@netlify/config': 17.0.19
       '@netlify/framework-info': 9.0.2
       '@netlify/local-functions-proxy': 1.1.1
