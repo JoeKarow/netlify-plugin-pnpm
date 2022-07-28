@@ -13,7 +13,7 @@ package = "."
 
 [build]
 # Dummy build command
-command = "echo onBuild"
+command = "echo $NPM_FLAGS"
 
 [build.environment]
 NODE_VERSION = "12.20.0"

@@ -7,6 +7,7 @@
 	"main": "./src/index.js",
 	"files": [
 		"src/**/*.js",
+		"src/**/*.ts",
 		"src/**/*.json",
 		"src/**/*.sh",
 		"src/**/*.html",
@@ -14,10 +15,10 @@
 		"manifest.yml"
 	],
 	"scripts": {
-		"build": "netlify-build",
-		"test": "npm run lint && npm run ava",
-		"lint": "npm run eslint && npm run prettier",
-		"eslint": "eslint --ignore-path .gitignore --fix --cache --format=codeframe --max-warnings=0 \"{src,init}/**/*.{cjs,mjs,js}\"",
+		"netlify:build": "netlify-build",
+		"test": "pnpm run lint && pnpm run ava",
+		"lint": "pnpm run eslint && pnpm run prettier",
+		"eslint": "eslint --ignore-path .gitignore --fix --cache --format=codeframe --max-warnings=0 \"src/**/*.{cjs,mjs,js}\"",
 		"prettier": "prettier --ignore-path .gitignore --write --loglevel warn \"{.github,src,init}/**/*.{cjs,mjs,js,md,yml,json}\" \"*.{cjs,mjs,js,md,yml,json}\"",
 		"ava": "cross-env FORCE_COLOR=1 ava --verbose",
 		"release": "release-it"
@@ -34,6 +35,9 @@
 		"lib": "src",
 		"test": "test"
 	},
+	"dependencies": {
+		"detect-package-manager": "^2.0.1"
+	},
 	"devDependencies": {
 		"@netlify/build": "^27.5.0",
 		"ava": "^4.0.0",
@@ -44,6 +48,7 @@
 		"email-validator": "^2.0.4",
 		"eslint": "^8.0.0",
 		"eslint-config-prettier": "^8.0.0",
+		"eslint-formatter-codeframe": "^7.32.1",
 		"eslint-plugin-import": "^2.22.1",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-prettier": "^4.0.0",
@@ -61,6 +66,7 @@
 		"semver": "^7.3.2",
 		"spdx-license-list": "^6.3.0",
 		"strip-ansi": "^7.0.0",
+		"typescript": "^4.7.4",
 		"username": "^6.0.0",
 		"yargs": "^17.0.0"
 	},
