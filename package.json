@@ -1,6 +1,6 @@
 {
 	"name": "netlify-plugin-pnpm",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "Netlify Build plugin to use pnpm as the package manager",
 	"type": "module",
 	"exports": "./src/index.js",
